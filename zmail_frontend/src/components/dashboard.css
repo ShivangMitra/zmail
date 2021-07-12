@@ -1,0 +1,240 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: azure;
+}
+.navbar {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  text-shadow: black;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.746);
+  color: white;
+}
+.nav-item {
+  float: left;
+  padding: 0rem 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: x-large;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.brand {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.nav-menu {
+  padding: 15px 32px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(223, 223, 223);
+  margin-right: 2rem;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: large;
+  border-radius: 5px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.nav-item:hover {
+  color: rgb(255, 136, 0);
+}
+.login {
+  background-color: transparent;
+}
+.login:hover {
+  background-color: rgba(255, 0, 0, 0.541);
+  border: 1px solid rgba(255, 0, 0, 0.541);
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/header.jpg") no-repeat;
+  top: 0;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  font-family: "Ubuntu", sans-serif;
+  z-index: -1;
+}
+
+.home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+.home .text-one {
+  font-size: 25px;
+  color: #999999;
+}
+.home .text-two {
+  color: #9e9e9e;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #5a5959;
+}
+
+.compose {
+  width: 30%;
+  margin-top: 5rem;
+  font-size: xx-large;
+  background-color: rgb(206, 203, 201);
+  text-decoration: none;
+  padding: 15px 32px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all;
+  transition-duration: 0.5s;
+  border: none;
+  outline: none;
+}
+
+.compose:hover {
+  color: rgb(206, 203, 201);
+  background-color: #343434;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all;
+  transition-duration: 0.15s;
+}
+
+.close-modal:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+
+  background-color: white;
+  padding: 2rem 7rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.mailhead {
+  background-color: #333;
+  color: white;
+  font-size: medium;
+  padding: 2%;
+  border-radius: 20px 20px 0px 0px;
+}
+.mailitem {
+  padding: 2%;
+  margin: auto;
+  width: 96%;
+  border: 0;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.39);
+}
+.typemsg {
+  /* height: 300px !important;
+  word-wrap: initial;
+  overflow: hidden; */
+  width: 96%;
+  resize: none;
+  overflow: hidden;
+}
+.Sendmail {
+  padding: 2% 4%;
+  background-color: #333;
+  color: aliceblue;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all;
+  transition-duration: 0.15s;
+}
+.Sendmail:hover {
+  color: #333;
+  background-color: rgb(0, 228, 0);
+}
+
+.mail-buttons {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedules {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schedules input {
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.schedules label {
+  margin-right: 2vw;
+}

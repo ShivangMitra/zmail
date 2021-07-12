@@ -1,0 +1,33 @@
+.container {
+  min-height: 100vh;
+  background-color: #343434;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  border-bottom: 1px solid white;
+  padding: 1% 3%;
+}
+
+.mail-contents {
+  display: flex;
+}
+
+.mail-details {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.mail-details-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
